@@ -21,7 +21,7 @@ enum class TokenType
   PRINT, RETURN, SUPER, THIS, TRUE, VAR, WHILE,
 
   // End of file
-  EOF
-}
+  EOFF
+};
 
 #endif

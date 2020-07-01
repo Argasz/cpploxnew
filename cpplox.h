@@ -1,10 +1,13 @@
+#ifndef CPPLOX_H
+#define CPPLOX_H
 #include <iostream>
 #include <iterator>
 #include <string>
 #include <fstream>
 #include <vector>
-#ifndef CPPLOX_H
-#define CPPLOX_H
+#include <variant>
+
+typedef std::variant<std::string, double, bool, std::monostate, std::nullptr_t> varType;
 
 int runFile(const std::string& path);
 int runPrompt();
